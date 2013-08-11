@@ -6,7 +6,7 @@ Template Name: Landing Page
 // Add custom body class to the head
 add_filter( 'body_class', 'add_body_class' );
 function add_body_class( $classes ) {
-   $classes[] = 'copyblogger-landing-page';
+   $classes[] = 'copyblogger2-landing-page';
    return $classes;
 }
 
