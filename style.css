@@ -1733,50 +1733,87 @@ Site Footer
 	padding-right: 1rem;
 }
 
-/*
-Content Boxes
+/* Content Boxes
 ------------------------------------------------------------ */
- 
+
 .content-box-blue,
 .content-box-gray,
 .content-box-green,
-.content-box-purple,
 .content-box-red,
 .content-box-yellow {
-	margin-bottom: 32px;
-	margin-bottom: 3.2rem;
-	padding: 24px;
-	padding: 2.4rem;
+  color: #34495e;
+  padding: 16px 45px 16px 30px;
+  padding: 1.6rem 4.5rem 1.6rem 3rem;
+  text-shadow: none;
+  background-color: #f9f8f3;
+  border: 2px solid #ebece8;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+margin: 0 0 25px;
+margin: 0 0 2.5rem;
 }
- 
+
 .content-box-blue {
-	background-color: #d8ecf7;
-	border: 1px solid #afcde3;
+	background-color: #f7f9fa;
+	border-color: #e9ecef;
 }
- 
+
 .content-box-gray {
-	background-color: #e2e2e2;
-	border: 1px solid #bdbdbd;
+	background-color: #f8f8f8;
+	border-color: #e9ecef;
 }
- 
+
+.content-box-blue a,
+.content-box-gray a {
+  	color: #3498db;
+	border-bottom: none;
+}
+
+.content-box-blue a:hover,
+.content-box-gray a:hover {
+	color: #3498db;
+	border-bottom: 1px dotted #3498db;
+}
+
 .content-box-green {
-	background-color: #d9edc2;
-	border: 1px solid #b2ce96;
+	background-color: #eef6f5;
+	border-color: #e0eaeb;
 }
- 
-.content-box-purple {
-	background-color: #e2e2f9;
-	border: 1px solid #bebde9;
+
+.content-box-green a {
+	color: #16a085;
+	border-bottom: none;
 }
- 
+
+.content-box-green a:hover {
+	color: #16a085;
+	border-bottom: 1px dotted #16a085;
+}
+
 .content-box-red {
-	background-color: #f9dbdb;
-	border: 1px solid #e9b3b3;
+	background-color: #f8f5f5;
+	border-color: #ebe9ea;
 }
- 
-.content-box-yellow {
-	background-color: #fef5c4;
-	border: 1px solid #fadf98;
+
+.content-box-red a {
+	color: #e74c3c;
+	border-bottom: none;
+}
+
+.content-box-red a:hover {
+	color: #e74c3c;
+	border-bottom: 1px dotted #e74c3c;
+}
+
+.content-box-yellow a {
+	color: #f1c40f;
+	border-bottom: none;
+}
+
+.content-box-yellow a:hover {
+	color: #f1c40f;
+	border-bottom: 1px dotted #f1c40f;
 }
 
 /*
