@@ -1481,8 +1481,10 @@ Content Area
 .comment-content,
 .comment-reply {
 	clear: both;
-	margin: 0 56px;
-	margin: 0 5.6rem;
+	margin-left: 56px;
+	margin-left: 5.6rem;
+	margin-right: 76px;
+	margin-right: 7.6rem;
 }
 
 .entry-comments .comment-author {
