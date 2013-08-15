@@ -1483,6 +1483,8 @@ Content Area
 	clear: both;
 	margin-left: 56px;
 	margin-left: 5.6rem;
+	margin-right: 30px;
+	margin-right: 3rem;
 }
 
 .entry-comments .comment-author {
@@ -2195,8 +2197,8 @@ Media Queries
 	.comment-content,
 	.comment-reply {
 		clear: both;
-		margin-left: 20px;
-		margin-left: 2rem;
+		margin: 0 20px;
+		margin: 0 2rem;
 	}
 	
 }
