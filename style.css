@@ -63,6 +63,16 @@
 
 */
 
+@font-face {
+    font-family: 'Genericons';
+    src: url('font/genericons-regular-webfont.eot');
+    src: url('font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/genericons-regular-webfont.woff') format('woff'),
+         url('font/genericons-regular-webfont.ttf') format('truetype'),
+         url('font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
 HTML5 Reset
@@ -623,8 +633,8 @@ img.alignnone {
 
 img.alignleft,
 .wp-caption.alignleft {
-	margin: 10px 24px 24px 0;
-	margin: 1rem 2.4rem 2.4rem 0;
+	margin: 6px 24px 24px 0;
+	margin: 0.6rem 2.4rem 2.4rem 0;
 }
 
 img.alignright,
@@ -1102,22 +1112,30 @@ Site Navigation
 	padding: 0;
 }
 
-.genesis-nav-menu > .rss > a,
-.genesis-nav-menu > .rss > a:hover {
-	background: url(images/rss.png) no-repeat left center;
-	margin-left: 48px;
-	margin-left: 4.8rem;
-	padding-left: 20px;
-	padding-left: 2rem;
-}
+.genesis-nav-menu > .rss > a:before {
+	content: '\f413';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+	padding: 0 10px;
+	padding: 0 1rem;
+}	
 
-.genesis-nav-menu > .twitter > a,
-.genesis-nav-menu > .twitter > a:hover {
-	background: url(images/twitter.png) no-repeat left center;
-	margin-left: 48px;
-	margin-left: 4.8rem;
-	padding-left: 20px;
-	padding-left: 2rem;
+.genesis-nav-menu > .twitter > a:before {
+	content: '\f202';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 18px/1 'Genericons';
+	vertical-align: top;
+	padding-right: 10px;
+	padding-right: 1rem;
+}	
+
+.genesis-nav-menu > .twitter > a:hover,
+.genesis-nav-menu > .rss > a:hover {
+	background: none;
+	color: #eee;
 }
 
 .genesis-nav-menu > .search {
@@ -1270,6 +1288,8 @@ Content Area
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-family: 'PT Sans', sans-serif;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .entry-meta a {
@@ -1297,31 +1317,55 @@ Content Area
 /* Post Icons
 ------------------------------------------------------------ */
 
-.entry-meta .entry-categories {
-	background: url(images/folder.png) no-repeat top left;
-	padding-left: 20px;
-	padding-left: 2rem;
+.entry-meta .entry-categories:before {
+	content: '\f301';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 22px/1 'Genericons';
+	vertical-align: top;
+}	
+
+.entry-meta .entry-categories,
+.entry-meta .entry-tags {
+	line-height: 22px;
+	line-height: 2.2rem;
 }
+
+.entry-meta .entry-tags:before {
+	content: '\f302';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 22px/1 'Genericons';
+	vertical-align: top;
+}	
 
 .entry-meta .entry-tags {
-	background: url(images/tag.png) no-repeat top left;
 	margin-top: 10px;
 	margin-top: 1rem;
-	padding-left: 20px;
-	padding-left: 2rem;
-}
-	
-.entry-meta .entry-comments-link {
-	background: url(images/comments.png) no-repeat center left;
-	float: right;
-	padding-left: 20px;
-	padding-left: 2rem;
 }
 
+.entry-meta .entry-comments-link:before {
+	content: '\f108';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}	
+
+.entry-meta .entry-comments-link {
+	float: right;
+}
+
+.entry-meta .entry-time:before {
+	content: '\f303';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px/1 'Genericons';
+	vertical-align: top;
+}	
+
 .entry-meta .entry-time {
-	background: url(images/time.png) no-repeat center left;
-	padding-left: 20px;
-	padding-left: 2rem;
+
 }
 
 
@@ -1718,14 +1762,20 @@ Site Footer
 
 .site-footer .gototop {
 	float: left;
-	width: 200px;
 }
 
+.site-footer .gototop a:before {
+	content: '\f432';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 30px/1 'Genericons';
+	vertical-align: top;
+}	
+
 .site-footer .gototop a {
-	background: url(images/arrow-up.png) no-repeat 0px 0px;
-  padding: 5px 10px 10px 40px;
-	padding: 0.5rem 1rem 1rem 4rem;
 	border: none;
+	line-height: 30px;
+	line-height: 3rem;
 }
 
 .site-footer .creds {
