@@ -65,7 +65,7 @@ function childtheme_comment_list_args( $args ) {
 /** Footer Copyright notice */
 add_filter('genesis_footer_output', 'footer_output_filter', 10, 3);
 function footer_output_filter( $output, $backtotop_text, $creds_text ) {
-    $creds_text = '<p>Copyright [footer_copyright] - <a href="'. trailingslashit( get_bloginfo('url') ) .'" title="'. esc_attr( get_bloginfo('name') ) .' rel="dofollow"">'.get_bloginfo('name').'</a>';
+    $creds_text = '<p>Copyright [footer_copyright] - <a href="'. trailingslashit( get_bloginfo('url') ) .'" title="'. esc_attr( get_bloginfo('name') ) .'" rel="dofollow"">'.get_bloginfo('name').'</a>';
    
 	  $output = '<div class="gototop"> [footer_backtotop text="Return to Top" href="#"] </div>' . '<div class="creds">' . $creds_text . ' | design by <a href="http://www.wpstuffs.com">WPStuffs</a> </div>' ;
       return $output;
