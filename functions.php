@@ -37,7 +37,7 @@ add_theme_support( 'genesis-style-selector', array(
 //* Load Lato and Merriweather Google fonts
 add_action( 'wp_enqueue_scripts', 'custom_load_google_fonts' );
 function custom_load_google_fonts() {
-	wp_enqueue_style( 'google-font', 'http://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans:400,700', array(), PARENT_THEME_VERSION );
+	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans:400,700', array(), PARENT_THEME_VERSION );
 }
 
 /** Reposition the breadcrumbs */
