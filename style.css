@@ -2080,6 +2080,11 @@ Media Queries
 		width: 300px;
 	}
 	
+	.footer-widgets-2 {
+		margin: 0 30px;
+		margin: 0 3rem;
+	}
+	
 	.sidebar-primary {
 		width: 350px;
 	}
